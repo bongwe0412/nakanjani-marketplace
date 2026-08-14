@@ -9,127 +9,57 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WishlistRouteImport } from './routes/wishlist'
-import { Route as VendorsRouteImport } from './routes/vendors'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as SearchRouteImport } from './routes/search'
-import { Route as ResetPasswordRouteImport } from './routes/reset-password'
-import { Route as RegisterRouteImport } from './routes/register'
-import { Route as ProductsRouteImport } from './routes/products'
-import { Route as OrdersRouteImport } from './routes/orders'
-import { Route as LoginRouteImport } from './routes/login'
-import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
-import { Route as DealsRouteImport } from './routes/deals'
-import { Route as CheckoutRouteImport } from './routes/checkout'
-import { Route as CartRouteImport } from './routes/cart'
-import { Route as AuthRouteImport } from './routes/auth'
-import { Route as AdminRouteImport } from './routes/admin'
-import { Route as AccountRouteImport } from './routes/account'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AccountRouteImport } from './routes/account'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as CartRouteImport } from './routes/cart'
+import { Route as CheckoutRouteImport } from './routes/checkout'
+import { Route as DealsRouteImport } from './routes/deals'
+import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as OrdersRouteImport } from './routes/orders'
+import { Route as ProductsRouteImport } from './routes/products'
+import { Route as RegisterRouteImport } from './routes/register'
+import { Route as ResetPasswordRouteImport } from './routes/reset-password'
+import { Route as SearchRouteImport } from './routes/search'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as VendorsRouteImport } from './routes/vendors'
+import { Route as WishlistRouteImport } from './routes/wishlist'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
-import { Route as VendorSettingsRouteImport } from './routes/vendor.settings'
-import { Route as VendorOrdersRouteImport } from './routes/vendor.orders'
-import { Route as VendorDashboardRouteImport } from './routes/vendor.dashboard'
-import { Route as VendorApplyRouteImport } from './routes/vendor.apply'
-import { Route as VendorSlugRouteImport } from './routes/vendor.$slug'
-import { Route as SupportTermsRouteImport } from './routes/support.terms'
-import { Route as SupportShippingRouteImport } from './routes/support.shipping'
-import { Route as SupportReturnsRouteImport } from './routes/support.returns'
-import { Route as SupportPrivacyRouteImport } from './routes/support.privacy'
-import { Route as SupportFaqRouteImport } from './routes/support.faq'
-import { Route as SupportContactRouteImport } from './routes/support.contact'
-import { Route as ProductIdRouteImport } from './routes/product.$id'
-import { Route as PaymentSuccessRouteImport } from './routes/payment.success'
-import { Route as PaymentFailedRouteImport } from './routes/payment.failed'
-import { Route as PaymentCancelledRouteImport } from './routes/payment.cancelled'
-import { Route as OrdersIdRouteImport } from './routes/orders.$id'
-import { Route as CheckoutSuccessRouteImport } from './routes/checkout.success'
-import { Route as CategorySlugRouteImport } from './routes/category.$slug'
-import { Route as AdminVendorsRouteImport } from './routes/admin.vendors'
-import { Route as AdminPaymentsRouteImport } from './routes/admin.payments'
-import { Route as AdminOrdersRouteImport } from './routes/admin.orders'
-import { Route as AdminHealthRouteImport } from './routes/admin.health'
 import { Route as AdminCategoriesRouteImport } from './routes/admin.categories'
+import { Route as AdminHealthRouteImport } from './routes/admin.health'
+import { Route as AdminOrdersRouteImport } from './routes/admin.orders'
+import { Route as AdminPaymentsRouteImport } from './routes/admin.payments'
+import { Route as AdminVendorsRouteImport } from './routes/admin.vendors'
+import { Route as CategorySlugRouteImport } from './routes/category.$slug'
+import { Route as CheckoutSuccessRouteImport } from './routes/checkout.success'
+import { Route as OrdersIdRouteImport } from './routes/orders.$id'
+import { Route as PaymentCancelledRouteImport } from './routes/payment.cancelled'
+import { Route as PaymentFailedRouteImport } from './routes/payment.failed'
+import { Route as PaymentSuccessRouteImport } from './routes/payment.success'
+import { Route as ProductIdRouteImport } from './routes/product.$id'
+import { Route as SupportContactRouteImport } from './routes/support.contact'
+import { Route as SupportFaqRouteImport } from './routes/support.faq'
+import { Route as SupportPrivacyRouteImport } from './routes/support.privacy'
+import { Route as SupportReturnsRouteImport } from './routes/support.returns'
+import { Route as SupportShippingRouteImport } from './routes/support.shipping'
+import { Route as SupportTermsRouteImport } from './routes/support.terms'
+import { Route as VendorSlugRouteImport } from './routes/vendor.$slug'
+import { Route as VendorApplyRouteImport } from './routes/vendor.apply'
+import { Route as VendorDashboardRouteImport } from './routes/vendor.dashboard'
+import { Route as VendorOrdersRouteImport } from './routes/vendor.orders'
+import { Route as VendorSettingsRouteImport } from './routes/vendor.settings'
+import { Route as AdminOrdersIdRouteImport } from './routes/admin.orders.$id'
+import { Route as ApiPublicYocoWebhookRouteImport } from './routes/api/public/yoco-webhook'
 import { Route as VendorProductsIndexRouteImport } from './routes/vendor.products.index'
 import { Route as VendorProductsNewRouteImport } from './routes/vendor.products.new'
-import { Route as ApiPublicYocoWebhookRouteImport } from './routes/api/public/yoco-webhook'
-import { Route as AdminOrdersIdRouteImport } from './routes/admin.orders.$id'
-import { Route as VendorProductsIdEditRouteImport } from './routes/vendor.products.$id.edit'
 import { Route as ApiPublicCronReconcilePaymentsRouteImport } from './routes/api/public/cron/reconcile-payments'
+import { Route as VendorProductsIdEditRouteImport } from './routes/vendor.products.$id.edit'
 
-const WishlistRoute = WishlistRouteImport.update({
-  id: '/wishlist',
-  path: '/wishlist',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VendorsRoute = VendorsRouteImport.update({
-  id: '/vendors',
-  path: '/vendors',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SearchRoute = SearchRouteImport.update({
-  id: '/search',
-  path: '/search',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ResetPasswordRoute = ResetPasswordRouteImport.update({
-  id: '/reset-password',
-  path: '/reset-password',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RegisterRoute = RegisterRouteImport.update({
-  id: '/register',
-  path: '/register',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductsRoute = ProductsRouteImport.update({
-  id: '/products',
-  path: '/products',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OrdersRoute = OrdersRouteImport.update({
-  id: '/orders',
-  path: '/orders',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LoginRoute = LoginRouteImport.update({
-  id: '/login',
-  path: '/login',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
-  id: '/forgot-password',
-  path: '/forgot-password',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DealsRoute = DealsRouteImport.update({
-  id: '/deals',
-  path: '/deals',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CheckoutRoute = CheckoutRouteImport.update({
-  id: '/checkout',
-  path: '/checkout',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CartRoute = CartRouteImport.update({
-  id: '/cart',
-  path: '/cart',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AuthRoute = AuthRouteImport.update({
-  id: '/auth',
-  path: '/auth',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminRoute = AdminRouteImport.update({
-  id: '/admin',
-  path: '/admin',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AccountRoute = AccountRouteImport.update({
@@ -137,9 +67,79 @@ const AccountRoute = AccountRouteImport.update({
   path: '/account',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CartRoute = CartRouteImport.update({
+  id: '/cart',
+  path: '/cart',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CheckoutRoute = CheckoutRouteImport.update({
+  id: '/checkout',
+  path: '/checkout',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DealsRoute = DealsRouteImport.update({
+  id: '/deals',
+  path: '/deals',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
+  id: '/forgot-password',
+  path: '/forgot-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OrdersRoute = OrdersRouteImport.update({
+  id: '/orders',
+  path: '/orders',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsRoute = ProductsRouteImport.update({
+  id: '/products',
+  path: '/products',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RegisterRoute = RegisterRouteImport.update({
+  id: '/register',
+  path: '/register',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResetPasswordRoute = ResetPasswordRouteImport.update({
+  id: '/reset-password',
+  path: '/reset-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SearchRoute = SearchRouteImport.update({
+  id: '/search',
+  path: '/search',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VendorsRoute = VendorsRouteImport.update({
+  id: '/vendors',
+  path: '/vendors',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WishlistRoute = WishlistRouteImport.update({
+  id: '/wishlist',
+  path: '/wishlist',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminIndexRoute = AdminIndexRouteImport.update({
@@ -147,109 +147,9 @@ const AdminIndexRoute = AdminIndexRouteImport.update({
   path: '/',
   getParentRoute: () => AdminRoute,
 } as any)
-const VendorSettingsRoute = VendorSettingsRouteImport.update({
-  id: '/vendor/settings',
-  path: '/vendor/settings',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VendorOrdersRoute = VendorOrdersRouteImport.update({
-  id: '/vendor/orders',
-  path: '/vendor/orders',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VendorDashboardRoute = VendorDashboardRouteImport.update({
-  id: '/vendor/dashboard',
-  path: '/vendor/dashboard',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VendorApplyRoute = VendorApplyRouteImport.update({
-  id: '/vendor/apply',
-  path: '/vendor/apply',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VendorSlugRoute = VendorSlugRouteImport.update({
-  id: '/vendor/$slug',
-  path: '/vendor/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SupportTermsRoute = SupportTermsRouteImport.update({
-  id: '/support/terms',
-  path: '/support/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SupportShippingRoute = SupportShippingRouteImport.update({
-  id: '/support/shipping',
-  path: '/support/shipping',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SupportReturnsRoute = SupportReturnsRouteImport.update({
-  id: '/support/returns',
-  path: '/support/returns',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SupportPrivacyRoute = SupportPrivacyRouteImport.update({
-  id: '/support/privacy',
-  path: '/support/privacy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SupportFaqRoute = SupportFaqRouteImport.update({
-  id: '/support/faq',
-  path: '/support/faq',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SupportContactRoute = SupportContactRouteImport.update({
-  id: '/support/contact',
-  path: '/support/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductIdRoute = ProductIdRouteImport.update({
-  id: '/product/$id',
-  path: '/product/$id',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PaymentSuccessRoute = PaymentSuccessRouteImport.update({
-  id: '/payment/success',
-  path: '/payment/success',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PaymentFailedRoute = PaymentFailedRouteImport.update({
-  id: '/payment/failed',
-  path: '/payment/failed',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PaymentCancelledRoute = PaymentCancelledRouteImport.update({
-  id: '/payment/cancelled',
-  path: '/payment/cancelled',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OrdersIdRoute = OrdersIdRouteImport.update({
-  id: '/$id',
-  path: '/$id',
-  getParentRoute: () => OrdersRoute,
-} as any)
-const CheckoutSuccessRoute = CheckoutSuccessRouteImport.update({
-  id: '/success',
-  path: '/success',
-  getParentRoute: () => CheckoutRoute,
-} as any)
-const CategorySlugRoute = CategorySlugRouteImport.update({
-  id: '/category/$slug',
-  path: '/category/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminVendorsRoute = AdminVendorsRouteImport.update({
-  id: '/vendors',
-  path: '/vendors',
-  getParentRoute: () => AdminRoute,
-} as any)
-const AdminPaymentsRoute = AdminPaymentsRouteImport.update({
-  id: '/payments',
-  path: '/payments',
-  getParentRoute: () => AdminRoute,
-} as any)
-const AdminOrdersRoute = AdminOrdersRouteImport.update({
-  id: '/orders',
-  path: '/orders',
+const AdminCategoriesRoute = AdminCategoriesRouteImport.update({
+  id: '/categories',
+  path: '/categories',
   getParentRoute: () => AdminRoute,
 } as any)
 const AdminHealthRoute = AdminHealthRouteImport.update({
@@ -257,10 +157,120 @@ const AdminHealthRoute = AdminHealthRouteImport.update({
   path: '/health',
   getParentRoute: () => AdminRoute,
 } as any)
-const AdminCategoriesRoute = AdminCategoriesRouteImport.update({
-  id: '/categories',
-  path: '/categories',
+const AdminOrdersRoute = AdminOrdersRouteImport.update({
+  id: '/orders',
+  path: '/orders',
   getParentRoute: () => AdminRoute,
+} as any)
+const AdminPaymentsRoute = AdminPaymentsRouteImport.update({
+  id: '/payments',
+  path: '/payments',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminVendorsRoute = AdminVendorsRouteImport.update({
+  id: '/vendors',
+  path: '/vendors',
+  getParentRoute: () => AdminRoute,
+} as any)
+const CategorySlugRoute = CategorySlugRouteImport.update({
+  id: '/category/$slug',
+  path: '/category/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CheckoutSuccessRoute = CheckoutSuccessRouteImport.update({
+  id: '/success',
+  path: '/success',
+  getParentRoute: () => CheckoutRoute,
+} as any)
+const OrdersIdRoute = OrdersIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => OrdersRoute,
+} as any)
+const PaymentCancelledRoute = PaymentCancelledRouteImport.update({
+  id: '/payment/cancelled',
+  path: '/payment/cancelled',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaymentFailedRoute = PaymentFailedRouteImport.update({
+  id: '/payment/failed',
+  path: '/payment/failed',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaymentSuccessRoute = PaymentSuccessRouteImport.update({
+  id: '/payment/success',
+  path: '/payment/success',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductIdRoute = ProductIdRouteImport.update({
+  id: '/product/$id',
+  path: '/product/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupportContactRoute = SupportContactRouteImport.update({
+  id: '/support/contact',
+  path: '/support/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupportFaqRoute = SupportFaqRouteImport.update({
+  id: '/support/faq',
+  path: '/support/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupportPrivacyRoute = SupportPrivacyRouteImport.update({
+  id: '/support/privacy',
+  path: '/support/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupportReturnsRoute = SupportReturnsRouteImport.update({
+  id: '/support/returns',
+  path: '/support/returns',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupportShippingRoute = SupportShippingRouteImport.update({
+  id: '/support/shipping',
+  path: '/support/shipping',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupportTermsRoute = SupportTermsRouteImport.update({
+  id: '/support/terms',
+  path: '/support/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VendorSlugRoute = VendorSlugRouteImport.update({
+  id: '/vendor/$slug',
+  path: '/vendor/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VendorApplyRoute = VendorApplyRouteImport.update({
+  id: '/vendor/apply',
+  path: '/vendor/apply',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VendorDashboardRoute = VendorDashboardRouteImport.update({
+  id: '/vendor/dashboard',
+  path: '/vendor/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VendorOrdersRoute = VendorOrdersRouteImport.update({
+  id: '/vendor/orders',
+  path: '/vendor/orders',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VendorSettingsRoute = VendorSettingsRouteImport.update({
+  id: '/vendor/settings',
+  path: '/vendor/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminOrdersIdRoute = AdminOrdersIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => AdminOrdersRoute,
+} as any)
+const ApiPublicYocoWebhookRoute = ApiPublicYocoWebhookRouteImport.update({
+  id: '/api/public/yoco-webhook',
+  path: '/api/public/yoco-webhook',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const VendorProductsIndexRoute = VendorProductsIndexRouteImport.update({
   id: '/vendor/products/',
@@ -272,27 +282,17 @@ const VendorProductsNewRoute = VendorProductsNewRouteImport.update({
   path: '/vendor/products/new',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicYocoWebhookRoute = ApiPublicYocoWebhookRouteImport.update({
-  id: '/api/public/yoco-webhook',
-  path: '/api/public/yoco-webhook',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminOrdersIdRoute = AdminOrdersIdRouteImport.update({
-  id: '/$id',
-  path: '/$id',
-  getParentRoute: () => AdminOrdersRoute,
-} as any)
-const VendorProductsIdEditRoute = VendorProductsIdEditRouteImport.update({
-  id: '/vendor/products/$id/edit',
-  path: '/vendor/products/$id/edit',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ApiPublicCronReconcilePaymentsRoute =
   ApiPublicCronReconcilePaymentsRouteImport.update({
     id: '/api/public/cron/reconcile-payments',
     path: '/api/public/cron/reconcile-payments',
     getParentRoute: () => rootRouteImport,
   } as any)
+const VendorProductsIdEditRoute = VendorProductsIdEditRouteImport.update({
+  id: '/vendor/products/$id/edit',
+  path: '/vendor/products/$id/edit',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -633,109 +633,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/wishlist': {
-      id: '/wishlist'
-      path: '/wishlist'
-      fullPath: '/wishlist'
-      preLoaderRoute: typeof WishlistRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/vendors': {
-      id: '/vendors'
-      path: '/vendors'
-      fullPath: '/vendors'
-      preLoaderRoute: typeof VendorsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/search': {
-      id: '/search'
-      path: '/search'
-      fullPath: '/search'
-      preLoaderRoute: typeof SearchRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reset-password': {
-      id: '/reset-password'
-      path: '/reset-password'
-      fullPath: '/reset-password'
-      preLoaderRoute: typeof ResetPasswordRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/register': {
-      id: '/register'
-      path: '/register'
-      fullPath: '/register'
-      preLoaderRoute: typeof RegisterRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products': {
-      id: '/products'
-      path: '/products'
-      fullPath: '/products'
-      preLoaderRoute: typeof ProductsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/orders': {
-      id: '/orders'
-      path: '/orders'
-      fullPath: '/orders'
-      preLoaderRoute: typeof OrdersRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/login': {
-      id: '/login'
-      path: '/login'
-      fullPath: '/login'
-      preLoaderRoute: typeof LoginRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/forgot-password': {
-      id: '/forgot-password'
-      path: '/forgot-password'
-      fullPath: '/forgot-password'
-      preLoaderRoute: typeof ForgotPasswordRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/deals': {
-      id: '/deals'
-      path: '/deals'
-      fullPath: '/deals'
-      preLoaderRoute: typeof DealsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/checkout': {
-      id: '/checkout'
-      path: '/checkout'
-      fullPath: '/checkout'
-      preLoaderRoute: typeof CheckoutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/cart': {
-      id: '/cart'
-      path: '/cart'
-      fullPath: '/cart'
-      preLoaderRoute: typeof CartRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/auth': {
-      id: '/auth'
-      path: '/auth'
-      fullPath: '/auth'
-      preLoaderRoute: typeof AuthRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin': {
-      id: '/admin'
-      path: '/admin'
-      fullPath: '/admin'
-      preLoaderRoute: typeof AdminRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/account': {
@@ -745,11 +647,109 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AccountRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cart': {
+      id: '/cart'
+      path: '/cart'
+      fullPath: '/cart'
+      preLoaderRoute: typeof CartRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/checkout': {
+      id: '/checkout'
+      path: '/checkout'
+      fullPath: '/checkout'
+      preLoaderRoute: typeof CheckoutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/deals': {
+      id: '/deals'
+      path: '/deals'
+      fullPath: '/deals'
+      preLoaderRoute: typeof DealsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/forgot-password': {
+      id: '/forgot-password'
+      path: '/forgot-password'
+      fullPath: '/forgot-password'
+      preLoaderRoute: typeof ForgotPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/orders': {
+      id: '/orders'
+      path: '/orders'
+      fullPath: '/orders'
+      preLoaderRoute: typeof OrdersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products': {
+      id: '/products'
+      path: '/products'
+      fullPath: '/products'
+      preLoaderRoute: typeof ProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/register': {
+      id: '/register'
+      path: '/register'
+      fullPath: '/register'
+      preLoaderRoute: typeof RegisterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reset-password': {
+      id: '/reset-password'
+      path: '/reset-password'
+      fullPath: '/reset-password'
+      preLoaderRoute: typeof ResetPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/search': {
+      id: '/search'
+      path: '/search'
+      fullPath: '/search'
+      preLoaderRoute: typeof SearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vendors': {
+      id: '/vendors'
+      path: '/vendors'
+      fullPath: '/vendors'
+      preLoaderRoute: typeof VendorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wishlist': {
+      id: '/wishlist'
+      path: '/wishlist'
+      fullPath: '/wishlist'
+      preLoaderRoute: typeof WishlistRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin/': {
@@ -759,151 +759,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminIndexRouteImport
       parentRoute: typeof AdminRoute
     }
-    '/vendor/settings': {
-      id: '/vendor/settings'
-      path: '/vendor/settings'
-      fullPath: '/vendor/settings'
-      preLoaderRoute: typeof VendorSettingsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/vendor/orders': {
-      id: '/vendor/orders'
-      path: '/vendor/orders'
-      fullPath: '/vendor/orders'
-      preLoaderRoute: typeof VendorOrdersRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/vendor/dashboard': {
-      id: '/vendor/dashboard'
-      path: '/vendor/dashboard'
-      fullPath: '/vendor/dashboard'
-      preLoaderRoute: typeof VendorDashboardRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/vendor/apply': {
-      id: '/vendor/apply'
-      path: '/vendor/apply'
-      fullPath: '/vendor/apply'
-      preLoaderRoute: typeof VendorApplyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/vendor/$slug': {
-      id: '/vendor/$slug'
-      path: '/vendor/$slug'
-      fullPath: '/vendor/$slug'
-      preLoaderRoute: typeof VendorSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/support/terms': {
-      id: '/support/terms'
-      path: '/support/terms'
-      fullPath: '/support/terms'
-      preLoaderRoute: typeof SupportTermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/support/shipping': {
-      id: '/support/shipping'
-      path: '/support/shipping'
-      fullPath: '/support/shipping'
-      preLoaderRoute: typeof SupportShippingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/support/returns': {
-      id: '/support/returns'
-      path: '/support/returns'
-      fullPath: '/support/returns'
-      preLoaderRoute: typeof SupportReturnsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/support/privacy': {
-      id: '/support/privacy'
-      path: '/support/privacy'
-      fullPath: '/support/privacy'
-      preLoaderRoute: typeof SupportPrivacyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/support/faq': {
-      id: '/support/faq'
-      path: '/support/faq'
-      fullPath: '/support/faq'
-      preLoaderRoute: typeof SupportFaqRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/support/contact': {
-      id: '/support/contact'
-      path: '/support/contact'
-      fullPath: '/support/contact'
-      preLoaderRoute: typeof SupportContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/product/$id': {
-      id: '/product/$id'
-      path: '/product/$id'
-      fullPath: '/product/$id'
-      preLoaderRoute: typeof ProductIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/payment/success': {
-      id: '/payment/success'
-      path: '/payment/success'
-      fullPath: '/payment/success'
-      preLoaderRoute: typeof PaymentSuccessRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/payment/failed': {
-      id: '/payment/failed'
-      path: '/payment/failed'
-      fullPath: '/payment/failed'
-      preLoaderRoute: typeof PaymentFailedRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/payment/cancelled': {
-      id: '/payment/cancelled'
-      path: '/payment/cancelled'
-      fullPath: '/payment/cancelled'
-      preLoaderRoute: typeof PaymentCancelledRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/orders/$id': {
-      id: '/orders/$id'
-      path: '/$id'
-      fullPath: '/orders/$id'
-      preLoaderRoute: typeof OrdersIdRouteImport
-      parentRoute: typeof OrdersRoute
-    }
-    '/checkout/success': {
-      id: '/checkout/success'
-      path: '/success'
-      fullPath: '/checkout/success'
-      preLoaderRoute: typeof CheckoutSuccessRouteImport
-      parentRoute: typeof CheckoutRoute
-    }
-    '/category/$slug': {
-      id: '/category/$slug'
-      path: '/category/$slug'
-      fullPath: '/category/$slug'
-      preLoaderRoute: typeof CategorySlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin/vendors': {
-      id: '/admin/vendors'
-      path: '/vendors'
-      fullPath: '/admin/vendors'
-      preLoaderRoute: typeof AdminVendorsRouteImport
-      parentRoute: typeof AdminRoute
-    }
-    '/admin/payments': {
-      id: '/admin/payments'
-      path: '/payments'
-      fullPath: '/admin/payments'
-      preLoaderRoute: typeof AdminPaymentsRouteImport
-      parentRoute: typeof AdminRoute
-    }
-    '/admin/orders': {
-      id: '/admin/orders'
-      path: '/orders'
-      fullPath: '/admin/orders'
-      preLoaderRoute: typeof AdminOrdersRouteImport
+    '/admin/categories': {
+      id: '/admin/categories'
+      path: '/categories'
+      fullPath: '/admin/categories'
+      preLoaderRoute: typeof AdminCategoriesRouteImport
       parentRoute: typeof AdminRoute
     }
     '/admin/health': {
@@ -913,12 +773,166 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminHealthRouteImport
       parentRoute: typeof AdminRoute
     }
-    '/admin/categories': {
-      id: '/admin/categories'
-      path: '/categories'
-      fullPath: '/admin/categories'
-      preLoaderRoute: typeof AdminCategoriesRouteImport
+    '/admin/orders': {
+      id: '/admin/orders'
+      path: '/orders'
+      fullPath: '/admin/orders'
+      preLoaderRoute: typeof AdminOrdersRouteImport
       parentRoute: typeof AdminRoute
+    }
+    '/admin/payments': {
+      id: '/admin/payments'
+      path: '/payments'
+      fullPath: '/admin/payments'
+      preLoaderRoute: typeof AdminPaymentsRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/vendors': {
+      id: '/admin/vendors'
+      path: '/vendors'
+      fullPath: '/admin/vendors'
+      preLoaderRoute: typeof AdminVendorsRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/category/$slug': {
+      id: '/category/$slug'
+      path: '/category/$slug'
+      fullPath: '/category/$slug'
+      preLoaderRoute: typeof CategorySlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/checkout/success': {
+      id: '/checkout/success'
+      path: '/success'
+      fullPath: '/checkout/success'
+      preLoaderRoute: typeof CheckoutSuccessRouteImport
+      parentRoute: typeof CheckoutRoute
+    }
+    '/orders/$id': {
+      id: '/orders/$id'
+      path: '/$id'
+      fullPath: '/orders/$id'
+      preLoaderRoute: typeof OrdersIdRouteImport
+      parentRoute: typeof OrdersRoute
+    }
+    '/payment/cancelled': {
+      id: '/payment/cancelled'
+      path: '/payment/cancelled'
+      fullPath: '/payment/cancelled'
+      preLoaderRoute: typeof PaymentCancelledRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/payment/failed': {
+      id: '/payment/failed'
+      path: '/payment/failed'
+      fullPath: '/payment/failed'
+      preLoaderRoute: typeof PaymentFailedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/payment/success': {
+      id: '/payment/success'
+      path: '/payment/success'
+      fullPath: '/payment/success'
+      preLoaderRoute: typeof PaymentSuccessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product/$id': {
+      id: '/product/$id'
+      path: '/product/$id'
+      fullPath: '/product/$id'
+      preLoaderRoute: typeof ProductIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/support/contact': {
+      id: '/support/contact'
+      path: '/support/contact'
+      fullPath: '/support/contact'
+      preLoaderRoute: typeof SupportContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/support/faq': {
+      id: '/support/faq'
+      path: '/support/faq'
+      fullPath: '/support/faq'
+      preLoaderRoute: typeof SupportFaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/support/privacy': {
+      id: '/support/privacy'
+      path: '/support/privacy'
+      fullPath: '/support/privacy'
+      preLoaderRoute: typeof SupportPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/support/returns': {
+      id: '/support/returns'
+      path: '/support/returns'
+      fullPath: '/support/returns'
+      preLoaderRoute: typeof SupportReturnsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/support/shipping': {
+      id: '/support/shipping'
+      path: '/support/shipping'
+      fullPath: '/support/shipping'
+      preLoaderRoute: typeof SupportShippingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/support/terms': {
+      id: '/support/terms'
+      path: '/support/terms'
+      fullPath: '/support/terms'
+      preLoaderRoute: typeof SupportTermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vendor/$slug': {
+      id: '/vendor/$slug'
+      path: '/vendor/$slug'
+      fullPath: '/vendor/$slug'
+      preLoaderRoute: typeof VendorSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vendor/apply': {
+      id: '/vendor/apply'
+      path: '/vendor/apply'
+      fullPath: '/vendor/apply'
+      preLoaderRoute: typeof VendorApplyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vendor/dashboard': {
+      id: '/vendor/dashboard'
+      path: '/vendor/dashboard'
+      fullPath: '/vendor/dashboard'
+      preLoaderRoute: typeof VendorDashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vendor/orders': {
+      id: '/vendor/orders'
+      path: '/vendor/orders'
+      fullPath: '/vendor/orders'
+      preLoaderRoute: typeof VendorOrdersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vendor/settings': {
+      id: '/vendor/settings'
+      path: '/vendor/settings'
+      fullPath: '/vendor/settings'
+      preLoaderRoute: typeof VendorSettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/orders/$id': {
+      id: '/admin/orders/$id'
+      path: '/$id'
+      fullPath: '/admin/orders/$id'
+      preLoaderRoute: typeof AdminOrdersIdRouteImport
+      parentRoute: typeof AdminOrdersRoute
+    }
+    '/api/public/yoco-webhook': {
+      id: '/api/public/yoco-webhook'
+      path: '/api/public/yoco-webhook'
+      fullPath: '/api/public/yoco-webhook'
+      preLoaderRoute: typeof ApiPublicYocoWebhookRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/vendor/products/': {
       id: '/vendor/products/'
@@ -934,32 +948,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VendorProductsNewRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/yoco-webhook': {
-      id: '/api/public/yoco-webhook'
-      path: '/api/public/yoco-webhook'
-      fullPath: '/api/public/yoco-webhook'
-      preLoaderRoute: typeof ApiPublicYocoWebhookRouteImport
+    '/api/public/cron/reconcile-payments': {
+      id: '/api/public/cron/reconcile-payments'
+      path: '/api/public/cron/reconcile-payments'
+      fullPath: '/api/public/cron/reconcile-payments'
+      preLoaderRoute: typeof ApiPublicCronReconcilePaymentsRouteImport
       parentRoute: typeof rootRouteImport
-    }
-    '/admin/orders/$id': {
-      id: '/admin/orders/$id'
-      path: '/$id'
-      fullPath: '/admin/orders/$id'
-      preLoaderRoute: typeof AdminOrdersIdRouteImport
-      parentRoute: typeof AdminOrdersRoute
     }
     '/vendor/products/$id/edit': {
       id: '/vendor/products/$id/edit'
       path: '/vendor/products/$id/edit'
       fullPath: '/vendor/products/$id/edit'
       preLoaderRoute: typeof VendorProductsIdEditRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/public/cron/reconcile-payments': {
-      id: '/api/public/cron/reconcile-payments'
-      path: '/api/public/cron/reconcile-payments'
-      fullPath: '/api/public/cron/reconcile-payments'
-      preLoaderRoute: typeof ApiPublicCronReconcilePaymentsRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -1063,3 +1063,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
